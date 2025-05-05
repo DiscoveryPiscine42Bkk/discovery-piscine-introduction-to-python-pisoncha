@@ -1,3 +1,4 @@
 ori = 35
-my_age = ori + 42
+add = 42
+my_age = ori + add
 print(f"{my_age}\n")
