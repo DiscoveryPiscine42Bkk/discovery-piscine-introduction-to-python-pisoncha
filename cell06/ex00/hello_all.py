@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-def hello():
+def hello() -> None:
     print("Hello, everyone!")
 
 hello()
