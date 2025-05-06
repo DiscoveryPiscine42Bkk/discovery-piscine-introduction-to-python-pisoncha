@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 def famous_births(input_dict : dict) -> None:
-    # convert nested dict to normal dict
+    # convert a nested dict to a normal dict
     temp = {}
     for k, v in input_dict.items():
         temp[v["name"]] = v["date_of_birth"]
