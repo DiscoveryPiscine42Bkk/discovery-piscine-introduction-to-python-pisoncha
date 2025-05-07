@@ -32,7 +32,7 @@ class ChessBoard:
         for s in steps:
              for i in range(len(self.board)):
                   moves.append([s[0] * (i + 1), s[1] * (i + 1)])
-        # print(moves)
+                  
         for m in moves:
              if [row + m[0], col + m[1]] == self.king_pos:
                   return True
@@ -44,7 +44,7 @@ class ChessBoard:
         for s in steps:
              for i in range(len(self.board)):
                   moves.append([s[0] * (i + 1), s[1] * (i + 1)])
-        # print(moves)
+
         for m in moves:
              if [row + m[0], col + m[1]] == self.king_pos:
                   return True
