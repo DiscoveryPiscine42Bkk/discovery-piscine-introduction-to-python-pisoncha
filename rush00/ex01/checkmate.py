@@ -79,7 +79,7 @@ class ChessBoard:
                             self.check = True
                             return
                 elif self.board[r][c] == 'Q':
-                    if self.check_bishops(r, c):
+                    if self.check_queens(r, c):
                             self.check = True
                             return
 
