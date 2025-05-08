@@ -6,7 +6,6 @@ class ChessBoard:
     
     def check_board(self, input_board):
          c_set = set("".join(input_board.split()))
-         print(c_set)
          for c in c_set:
               if c not in ["P", "B", "R", "Q", "K", "."]:
                    return False
