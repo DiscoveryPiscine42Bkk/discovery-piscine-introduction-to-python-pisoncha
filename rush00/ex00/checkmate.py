@@ -5,6 +5,11 @@ class ChessBoard:
         self.check = False
     
     def check_board(self, input_board):
+         c_set = set("".join(input_board.split()))
+         print(c_set)
+         for c in c_set:
+              if c not in ["P", "B", "R", "Q", "K", "."]:
+                   return False
          if input_board.count("K") != 1:
               return False
          for row in self.board:
@@ -85,9 +90,12 @@ class ChessBoard:
             print("Fail")
 
 def checkmate(board):
-    chess = ChessBoard(board)
-    if chess.check_board(board):
-        chess.check_all()
-        chess.print_result()
-    else:
+    try:
+        chess = ChessBoard(board)
+        if chess.check_board(board):
+            chess.check_all()
+            chess.print_result()
+        else:
+            print("Error")
+    except:
          print("Error")
