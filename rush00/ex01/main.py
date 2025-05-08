@@ -6,7 +6,7 @@ def main():
     if len(argv) == 1:
         print("No input")
     elif len(argv) == 2 and argv[1] == "--all":
-        files = os.listdir()
+        files = sorted(os.listdir())
         for file in files:
             if file[-6:] == ".chess":
                 print(file, end=" >>> ")
