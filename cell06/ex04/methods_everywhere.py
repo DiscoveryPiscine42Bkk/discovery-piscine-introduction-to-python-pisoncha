@@ -12,7 +12,7 @@ def enlarge(word : str) -> str:
         i += 1
     return word
 
-argv = sys.argv
+argv = sys.argv[1:]
 if len(argv) > 1:
     for w in argv:
         if len(w) >= 8:
